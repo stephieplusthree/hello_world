@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello World</h1>
+      <div className="search">
+        <input/>
+        <button>Add Car</button>
+      </div>
+      <div className="list">
+        <h3>Favorite Cars</h3>
+        <ul>
+          <li className="list-item">Lexus IS250</li>
+          <li className="list-item">Infiniti Q50</li>
+          <li className="list-item">Maclaren</li>
+        </ul>
+      </div>
     </div>
   );
 }
+
+class Search extends React.Component{
+  render(){
+    return
+  }
+}
+
+
+
 
 export default App;
