@@ -11,15 +11,23 @@ function App() {
   );
 }
 
+class ListItem extends React.Component{
+  render(){
+    return(
+      <li className="list-item">List Item</li>
+    )
+  }
+}
+
 class List extends React.Component{
   render(){
     return(
       <div className="list">
         <h3>Favorite Cars</h3>
         <ul>
-          <li className="list-item">Lexus IS250</li>
-          <li className="list-item">Infiniti Q50</li>
-          <li className="list-item">Maclaren</li>
+          <ListItem/>
+          <ListItem/>
+          <ListItem/>
         </ul>
       </div>
     )
